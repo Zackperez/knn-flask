@@ -32,7 +32,7 @@ class Usuario():
             access_token = create_access_token(identity=username)
             print("access_token generado con éxito")
 
-        return jsonify({"access_token": access_token})
+        return jsonify({"acceso": "AUTORIZADO" ,"access_token": access_token})
     
     def datos_usuario(self):
             
