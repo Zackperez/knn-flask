@@ -9,6 +9,8 @@ app.config['JWT_SECRET_KEY'] = 'super-secret' # Clave secreta para firmar los JW
 cors = CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:5000"}})
 jwt = JWTManager(app)
 
+
+#El método register_blueprint se utiliza para conectar y activar un objeto Blueprint en la aplicación principal de Flask. Al registrar un blueprint, se pueden definir rutas, vistas, controladores y otros aspectos relacionados con esa parte específica de la aplicación.
 app.register_blueprint(inicio_sesion)
 
 def pagina_no_encontrada(error):

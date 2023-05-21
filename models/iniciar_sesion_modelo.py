@@ -187,6 +187,7 @@ class Usuario():
         breast = datos_usuario['breast']
         breastQuead = datos_usuario['breastQuead']
         irradiat = datos_usuario['irradiat']
+        
         new_data = pd.DataFrame([[edad, menopausia, tumorTamaño, invNodes, nodesCaps, gradoTumor, breast, breastQuead, irradiat]], columns=['age', 'menopause', 'tumor-size', 'inv-nodes', 'node-caps', 'deg-malig', 'breast', 'breast-quad', 'irradiat'])
 
         resultado_prueba_sin_formatear, precision = knn_prediction(new_data)
